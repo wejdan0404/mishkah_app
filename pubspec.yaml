@@ -1,0 +1,98 @@
+name: mishkat
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.10+1
+  cupertino_icons: ^1.0.8
+  lottie: ^3.1.2
+  sdga_design_system: ^1.0.0
+  sdga_icons: ^0.0.2
+  http: ^1.2.2
+  record: ^6.0.0
+  permission_handler: ^11.3.1
+  flutter_secure_storage: ^9.2.2
+  google_sign_in: ^7.2.0
+  firebase_core: ^4.9.0
+  firebase_messaging: ^16.2.2
+  # Rich-text editor for the Journal writing screen (stores Quill Delta JSON in
+  # body_delta; plain text stays in body as a fallback). Pin a version that
+  # resolves against the project SDK — run `flutter pub get` and adjust if the
+  # resolver picks a different major.
+  flutter_quill: ^11.0.0
+
+dependency_overrides:
+  record_linux: ^1.3.0
+  # Pin to last version before path_provider_android switched to package:jni
+  # (jni 1.0.0's Android module fails Gradle dependency resolution with
+  # "Cannot query the value of this provider" on :jni:compileDebugJavaWithJavac).
+  path_provider_android: 2.2.23
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/icons/profile/
+    - assets/icons/nav/
+    - assets/icons/home/
+    - assets/icons/about/
+    - assets/icons/terms/
+    - assets/icons/privacy/
+    - assets/icons/focus/
+    - assets/icons/activities/
+    - assets/images/
+    - assets/images/AI/
+    - assets/images/play/
+    - assets/images/play/moods/
+    - assets/animations/
+    - assets/fonts/
+
+  fonts:
+    - family: IBM Plex Sans Arabic
+      fonts:
+        - asset: assets/fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Regular.ttf
+        - asset: assets/fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Bold.ttf
+          weight: 700
+
+    - family: ThmanyahSerifText
+      fonts:
+        - asset: assets/fonts/thmanyah_serif_text/thmanyahseriftext-Light.otf
+          weight: 300
+        - asset: assets/fonts/thmanyah_serif_text/thmanyahseriftext-Regular.otf
+          weight: 400
+        - asset: assets/fonts/thmanyah_serif_text/thmanyahseriftext-Medium.otf
+          weight: 500
+        - asset: assets/fonts/thmanyah_serif_text/thmanyahseriftext-Bold.otf
+          weight: 700
+        - asset: assets/fonts/thmanyah_serif_text/thmanyahseriftext-Black.otf
+          weight: 900
+
+    - family: Amiri Quran Colored
+      fonts:
+        - asset: assets/fonts/Amiri Quran Colored.ttf
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/logo.png"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icons/logo.png"

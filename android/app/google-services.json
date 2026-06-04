@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "103240003911",
+    "project_id": "mishkat-api",
+    "storage_bucket": "mishkat-api.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103240003911:android:6665a1e6ee93296f4f9c62",
+        "android_client_info": {
+          "package_name": "com.mariyyahaziz.mishkat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103240003911-vuff5d6jb1sp4bafj7r036m20cqpo3sm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJNCdteeuN-yMEYsiSbQ1Oroi8neC7SlQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103240003911-vuff5d6jb1sp4bafj7r036m20cqpo3sm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "103240003911-haor3giqnntcj5tk9pjkc356n25a50fa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mariyyahaziz.mishkat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
